@@ -31,4 +31,12 @@ public class VisitanteVip extends Visitante{
     public void setBeneficios(List<String> beneficios) {
         this.beneficios = beneficios;
     }
+
+    @Override
+    public String toString() {
+        return "\nVisitanteVip{" +
+                "\nsalaVipAcesso=" + salaVipAcesso +
+                "\n beneficios=" + beneficios +
+                "} " + super.toString();
+    }
 }

@@ -5,16 +5,14 @@ public class Ingresso {
     private Long id;
     private String tipo;
     private Double preco;
-    private Evento evento;
 
     public Ingresso() {
     }
 
-    public Ingresso(Long id, String tipo, Double preco, Evento evento) {
+    public Ingresso(Long id, String tipo, Double preco) {
         this.id = id;
         this.tipo = tipo;
         this.preco = preco;
-        this.evento = evento;
     }
 
     public Long getId() {
@@ -41,23 +39,12 @@ public class Ingresso {
         this.preco = preco;
     }
 
-    public Evento getEvento() {
-        return evento;
-    }
-
-    public void setEvento(Evento evento) {
-        this.evento = evento;
-    }
-
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Ingresso{");
-        sb.append("id=").append(id);
-        sb.append(", tipo='").append(tipo).append('\'');
-        sb.append(", preco=").append(preco);
-        sb.append(", evento=").append(evento);
-        sb.append('}');
-        return sb.toString();
+        return "\nIngresso{" +
+                "\nid=" + id +
+                "\ntipo='" + tipo + '\'' +
+                "\npreco=" + preco +
+                '}';
     }
-
 }

@@ -32,9 +32,9 @@ public class Visitante extends Pessoa{
 
     @Override
     public String toString() {
-        return "Visitante{" +
-                "idade=" + idade +
-                ", profissao='" + profissao + '\'' +
+        return "\nVisitante{" +
+                "\nidade=" + idade +
+                "\nprofissao='" + profissao + '\'' +
                 "} " + super.toString();
     }
 }

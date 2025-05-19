@@ -17,9 +17,8 @@ public class PessoaService implements CadastroInterface {
     LocalDate diaFim = LocalDate.of(2025, Month.OCTOBER, 12);
     private Scanner scanner = new Scanner(System.in);
     private List<Pessoa> pessoas = new ArrayList<>();
-    private final Evento eventoPadrao = new Evento(1L, "BGS 2025", "Expo Center SP",diaInicio,diaFim);
-    private final Ingresso ingressoPadrao = new Ingresso(1L, "Padrao", 99.99, eventoPadrao);
-    private final Ingresso ingressoVip = new Ingresso(2L, "VIP", 199.99, eventoPadrao);
+    private final Ingresso ingressoPadrao = new Ingresso(1L, "Padrao", 99.99);
+    private final Ingresso ingressoVip = new Ingresso(2L, "VIP", 199.99);
 
 
 
@@ -56,6 +55,7 @@ public class PessoaService implements CadastroInterface {
             String profissao = scanner.nextLine();
             visitante.setProfissao(profissao);
             pessoas.add(visitante);
+            list();
             return visitante;
         }
     }
@@ -99,7 +99,6 @@ public class PessoaService implements CadastroInterface {
     }
 
     public void list() {
-        cadastrarVisitante();
         for (Pessoa p : pessoas){
             System.out.println(p);
         }

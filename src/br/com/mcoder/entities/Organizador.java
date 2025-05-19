@@ -26,12 +26,12 @@ public class Organizador extends Pessoa{
         this.nivelAcesso = nivelAcesso;
     }
 
+
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Organizador{");
-        sb.append("setorResponsavel='").append(setorResponsavel).append('\'');
-        sb.append(", nivelAcesso='").append(nivelAcesso).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "\nOrganizador{" +
+                "\nsetorResponsavel='" + setorResponsavel + '\'' +
+                "\nnivelAcesso='" + nivelAcesso + '\'' +
+                "} " + super.toString();
     }
 }

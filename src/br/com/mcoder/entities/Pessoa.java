@@ -61,14 +61,12 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Pessoa{");
-        sb.append("id=").append(id);
-        sb.append(", nome='").append(nome).append('\'');
-        sb.append(", email='").append(email).append('\'');
-        sb.append(", cpf='").append(cpf).append('\'');
-        sb.append(", ingresso=").append(ingresso);
-        sb.append('}');
-        return sb.toString();
+        return "\nPessoa{" +
+                "\nid=" + id +
+                "\nnome='" + nome + '\'' +
+                "\nemail='" + email + '\'' +
+                "\ncpf='" + cpf + '\'' +
+                "\ningresso=" + ingresso +
+                '}';
     }
-
 }
