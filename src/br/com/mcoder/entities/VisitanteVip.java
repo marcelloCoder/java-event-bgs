@@ -1,11 +1,14 @@
 package br.com.mcoder.entities;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class VisitanteVip extends Visitante{
     private boolean salaVipAcesso;
     private List<String> beneficios;
+
+    public VisitanteVip(){
+
+    }
 
     public VisitanteVip(Long id, String nome, String email, String cpf, Ingresso ingresso, Integer idade, String profissao, boolean salaVipAcesso, List<String> beneficios) {
         super(id, nome, email, cpf, ingresso, idade, profissao);

@@ -32,11 +32,9 @@ public class Visitante extends Pessoa{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Visitante{");
-        sb.append("idade=").append(idade);
-        sb.append(", profissao='").append(profissao).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Visitante{" +
+                "idade=" + idade +
+                ", profissao='" + profissao + '\'' +
+                "} " + super.toString();
     }
-
 }
